@@ -45,7 +45,7 @@
                                 <br>
                                 <span>Nome:<span>
                                         <input type="text" class="form-control" name="nome"
-                                            placeholder="Digite o nome do pet...">
+                                            placeholder="Digite o nome do pet..." required>
                                         <br>
                                         <span>Descrição:<span>
                                                 <textarea class="form-control" name="descricao"
@@ -56,19 +56,19 @@
                                                     <div class="col-md">
                                                         <span>Estado:</span>
                                                         <input type="text" placeholder="Digite o estado do pet..."
-                                                            name="estado" class="form-control">
+                                                            name="estado" class="form-control" required>
                                                     </div>
 
                                                     <div class="col-md">
                                                         <span>Cidade:</span>
                                                         <input type="text" placeholder="Digite a cidade do pet..."
-                                                            name="cidade" class="form-control">
+                                                            name="cidade" class="form-control" required>
                                                     </div>
                                                 </div>
                                                 <br>
                                                 <span>Telefone para contato:</span>
                                                 <input type="text" placeholder="Digite o seu telefone..."
-                                                    name="telefone" class="form-control">
+                                                    name="telefone" class="form-control" required>
                                                 <br>
                                                 <span>Tags:</span>
                                                 <select name="tags" multiple class="form-select">
@@ -81,7 +81,7 @@
 
                                         <select name="raca" class="form-select">
                                             {% for raca in racas %}
-                                            <option value="{{raca.id}}">{{raca}}</option>
+                                            <option value="{{raca.id}}" required>{{raca}}</option>
                                             {%endfor%}
                                         </select>
 
