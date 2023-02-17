@@ -48,9 +48,9 @@ def novo_pet(request):
         pet.save()
         return redirect('/divulgar/seus_pets')
        # tags = Tag.objects.all()
-       #racas = Raca.objects.all()
-       #messages.add_message(request, constants.SUCCESS, 'Novo pet cadastrado')
-       # return render(request, 'novo_pet.html', {'tags': tags, 'racas': racas}) 
+       # racas = Raca.objects.all()
+       # messages.add_message(request, constants.SUCCESS, 'Novo pet cadastrado')
+       # return render(request, 'novo_pet.html', {'tags': tags, 'racas': racas})
 
 
 @login_required
@@ -72,3 +72,9 @@ def remover_pet(request, id):
     messages.add_message(request, constants.SUCCESS,
                          'Pet removido com sucesso')
     return redirect("/divulgar/seus_pets")
+
+
+def ver_pet(request, id):
+    if request.method == "GET":
+        pet = Pet.objects.get(id=id)
+        return render(request, "ver_pet.html", {'pet': pet})
