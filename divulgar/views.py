@@ -2,6 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
 from django.contrib.auth.decorators import login_required
+
+from adotar.models import Pedido_Adocao
 from .models import Tag, Raca, Pet
 from django.contrib.messages import constants
 from django.contrib import messages
@@ -78,3 +80,13 @@ def ver_pet(request, id):
     if request.method == "GET":
         pet = Pet.objects.get(id=id)
         return render(request, "ver_pet.html", {'pet': pet})
+
+
+def ver_pedido_adocao(request):
+    
+    if request.method == "GET":
+
+        pedidos = Pedido_Adocao.objects.filter(
+            usuario=request.user).filter(status='AG')
+
+        return render(request, 'ver_pedido_adocao.html', {'pedidos': pedidos})

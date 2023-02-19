@@ -14,4 +14,7 @@
  h6{
     font-weight: bold;
  }
- 
+ .flex{
+    display: flex;
+    gap: 10px;
+ }
