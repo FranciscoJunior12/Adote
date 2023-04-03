@@ -90,3 +90,12 @@ def ver_pedido_adocao(request):
             usuario=request.user).filter(status='AG')
 
         return render(request, 'ver_pedido_adocao.html', {'pedidos': pedidos})
+
+
+def dashboard(request):
+    
+    if request.method == "GET":
+
+        
+
+        return render(request, 'dashboard.html')

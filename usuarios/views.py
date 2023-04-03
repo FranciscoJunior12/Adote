@@ -47,7 +47,7 @@ def cadastro(request):
 def logar(request):
 
     if request.user.is_authenticated:
-        return redirect('/divulgar/novo_pet')
+        return redirect('/adotar')
 
     if request.method == 'GET':
         return render(request, 'login.html')
@@ -58,7 +58,7 @@ def logar(request):
         user = authenticate(username=nome ,password=senha)
         if user is not None:
             login(request, user)
-            return render (request,'/divulgar/novo_pet')
+            return redirect ('/adotar')
         else:
             messages.add_message(request, constants.ERROR, 'Usuário ou senha inválidos')
             return render(request, 'login.html')

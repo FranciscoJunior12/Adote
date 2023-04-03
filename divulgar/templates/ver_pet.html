@@ -11,6 +11,7 @@
     <link href="{% static 'divulgar/css/novo_pet.css' %}" rel="stylesheet">
     <link href="{% static 'divulgar/css/seus_pet.css' %}" rel="stylesheet">
     <link href="{% static 'adotar/css/listar_pets.css' %}" rel="stylesheet">
+    <link href="{% static 'adotar/css/home.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,27 @@
             <div class="col-md-2 bg-side-plataforma sidebar">
                 <h2>ADO.TE</h2>
                 <hr>
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
 
+                    <li>
+                        <a href="{% url 'listar_pets' %}">Adotar</a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'ver_pedido_adocao' %}">Pedidos</a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'novo_pet' %}">Divulgar</a>
+                    </li>
+                    <li>
+                        <a href=" {% url 'sair' %}">Sair</a>
+                    </li>
+                  
+                </ul>
 
             </div>
 

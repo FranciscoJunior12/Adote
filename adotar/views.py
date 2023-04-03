@@ -11,6 +11,15 @@ from django.core.mail import send_mail
 
 
 @login_required
+def home(request):
+    if request.method == 'GET':
+        
+        return render(request, 'home.html')
+
+
+
+
+@login_required
 def listar_pets(request):
     if request.method == "GET":
         pets = Pet.objects.filter(status="P")
@@ -26,6 +35,11 @@ def listar_pets(request):
             pets = pets.filter(raca=raca_filter)
 
         return render(request, 'listar_pets.html', {'pets': pets, 'racas': racas, 'cidade': cidade, 'raca_filter': raca_filter})
+
+
+
+
+
 
 
 def pedido_adocao(request, id):

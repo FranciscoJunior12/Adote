@@ -1,0 +1,22 @@
+a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 35px;
+    text-align: left;
+    gap: 15px
+}
+.alinhamento{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
