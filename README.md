@@ -3,5 +3,14 @@
  
  ## Tecnologias usadas
  Python para o backend(framework django) e HTML5, CSS3 e JavaScript para o frontend.
+ 
+ ## Screenshort
+ 
+ ![LoginPage](./Design/LOGIN.png)
+ ![LoginPage](./Design/CADASTRO.png)
+ ![LoginPage](./Design/DIVULGAR.png)
+   ![LoginPage](./Design/PETS.png)
+     ![LoginPage](./Design/PEDIDOS.png)
+       ![LoginPage](./Design/SOLICITACAO.png)
 
 ### OBS: sistema ainda em desenvolvimento.
