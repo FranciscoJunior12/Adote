@@ -4,7 +4,7 @@
  ## Tecnologias usadas
  Python para o backend(framework django) e HTML5, CSS3 e JavaScript para o frontend.
  
- ## Screenshort
+ ## Screenshorts do Layout da Aplicação
  
  ![LoginPage](./Design/LOGIN.png)
  ![LoginPage](./Design/CADASTRO.png)
