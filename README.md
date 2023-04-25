@@ -1,8 +1,12 @@
 # Adote
- Adote é uma aplicação web para conectar pessoas que tem animais para colocar em adoção e pessoas que querem adotar um animal.
+Adote é uma aplicação web para conectar pessoas que têm animais para colocar em adoção e pessoas que querem adotar um animal.
  
  ## Tecnologias usadas
- Python para o backend(framework django) e HTML5, CSS3 e JavaScript para o frontend.
+ 
+![Django](https://img.shields.io/badge/django-6DA55F?style=for-the-badge&logo=django&logoColor=blue)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![NodeJS](https://img.shields.io/badge/javascript-6DA55F?style=for-the-badge&logo=javascript&logoColor=yellow)
  
  ## Screenshorts do Layout da Aplicação
  
