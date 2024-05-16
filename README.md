@@ -17,4 +17,6 @@ Adote é uma aplicação web para conectar pessoas que têm animais para colocar
      ![LoginPage](./Design/PEDIDOS.png)
        ![LoginPage](./Design/SOLICITACAO.png)
 
-### OBS: sistema ainda em desenvolvimento.
+## Autor
+- [Francisco Júnior](https://github.com/franciscojunior12)
+- Link do projecto: https://github.com/FranciscoJunior12/Adote
